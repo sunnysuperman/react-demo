@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 编译的目标
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@config": ["src/config/index"],
+      "@common": ["src/common/index"],
+      "@common/*": ["src/common/*"],
+      "@comp/*": ["src/comp/*"],
+      "@css/*": ["src/css/*"],
+      "@img/*": ["src/img/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

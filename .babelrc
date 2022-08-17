@@ -1,0 +1,21 @@
+{
+  "presets": ["@babel/react", "@babel/env"],
+  "plugins": [
+    // jsx必须的插件
+    // https://www.cnblogs.com/banyouxia/p/12169430.html
+    "@babel/plugin-proposal-object-rest-spread",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+    // 按需加载
+    // ["transform-imports", {
+    // "ppfish": {
+    //   "transform": "ppfish/es/components/${member}",
+    //   "preventFullImport": true
+    // }
+    // lodash在webpack.js里处理过了
+    // "lodash": {
+    //   "transform": "lodash/${member}",
+    //   "preventFullImport": true
+    // }
+    // }]
+  ]
+}
